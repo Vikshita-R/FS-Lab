@@ -170,8 +170,7 @@ def course_register(request):
         return render(request, "main/course_register.html")
 
 def program7(request):
-    pass
-    # return render(request, "main/program7.html")
+    return render(request, "main2/index.html")
 
 def program8(request):
     studentList = Student5.objects.all()

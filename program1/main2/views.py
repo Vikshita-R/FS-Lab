@@ -3,7 +3,7 @@ from . models import Course, Student, ProjectReg, ProjectRegistration
 # Create your views here.
 
 def index(request):
-    return render(request, "main2/index.html")
+    return render(request, "main2/t2.html")
 
 def reg(request): 
     if request.method == "POST": 
