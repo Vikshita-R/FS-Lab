@@ -1,0 +1,16 @@
+{% include 'base.html' %}
+{% block content %}
+<div class="container mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
+    <h1 class="text-2xl font-bold text-gray-900 mb-4 border-b-2 pb-2">{{ student.name }}</h1>
+    <div class="mb-4">
+        <p class="text-lg"><span class="font-semibold">Email:</span> {{ student.email }}</p>
+        <p class="text-lg"><span class="font-semibold">USN:</span> {{ student.usn }}</p>
+    </div>
+    <h1 class="text-2xl font-semibold text-gray-800 mt-6 mb-4">Enrolled Courses:</h1>
+    <ul class="list-disc pl-5 space-y-2">
+        {% for course in student.courses.all %}
+            <li class="text-lg">{{ course.name }} <span class="text-gray-500">({{ course.code }})</span></li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

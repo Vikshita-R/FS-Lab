@@ -1,0 +1,22 @@
+{% include 'base.html' %}
+{% block content %}
+<div class="flex items-center justify-center min-h-screen space-x-4">
+    <div class="w-1/4 p-4 border border-gray-300 rounded bg-DeepBlue text-white">
+        <h2 class="text-xl font-semibold mb-2">Available Fruit List</h2>
+        <ul class="list-disc pl-5">
+            {% for fruit in fruits %}
+            <li>{{ fruit.name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="w-1/4 p-4 border border-gray-300 rounded bg-HotPink">
+        <h2 class="text-xl font-semibold mb-2">Selected students for the event</h2>
+        <ol class="list-decimal pl-5">
+            {% for student in students %}
+            <li>{{ student.name }} in {{ student.event }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+</div>
+{% endblock %}

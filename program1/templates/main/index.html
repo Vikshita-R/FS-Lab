@@ -1,0 +1,42 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FS Lab</title>
+    {% tailwind_css %}
+</head>
+<body  class="bg-gray-100 flex items-center justify-center min-h-screen">
+    
+    <div class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="flex flex-col space-y-4 mr-4">
+        <a href="{% url 'Program1' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 1</a>
+         <a href="{% url 'Program2' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 2</a>
+         <a href="{% url 'Program3' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 3</a>
+         <a href="{% url 'Program4' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 4</a>
+         <a href="{% url 'Program5' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 5</a>
+         <a href="{% url 'Program6' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 6</a>
+    </div>
+    <div class="flex flex-col space-y-4">
+        <a href="{% url 'program7' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 7</a>
+         <a href="{% url 'Program8' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 8</a>
+         <a href="{% url 'Program9' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 9</a>
+         <a href="{% url 'Program10' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 10</a>
+         <a href="{% url 'Program11' %}"
+         class="bg-indigo-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Program 11</a>         
+    </div>
+    </div>
+    
+</body>
+</html>

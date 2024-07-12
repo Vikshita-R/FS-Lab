@@ -1,0 +1,28 @@
+{% include 'base.html' %}
+{% block content %}
+<div class="container mx-auto p-6 w-3/4">
+    <h2 class="text-2xl font-semibold mb-4">List of Students</h2>
+    <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-300">
+            <thead>
+                <tr class="bg-indigo-700 text-left">
+                    <th class="py-2 px-4 border-b">Name</th>
+                    <th class="py-2 px-4 border-b">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in student_list %}
+                <tr>
+                    <td class="py-2 px-4 border-b">{{ student.name }}</td>
+                    <td class="py-2 px-4 border-b">{{ student.email }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="2" class="py-2 px-4 text-center border-b">No students found for this course.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

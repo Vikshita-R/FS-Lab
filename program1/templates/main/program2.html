@@ -1,0 +1,14 @@
+{% include 'base.html' %}
+{% block content %}
+<div class="flex items-center justify-center min-h-screen bg-indigo-500">
+    <div class="bg-blue p-6 rounded-lg shadow-lg text-center bg-white">
+        <h2 class="text-2xl font-semibold mb-4  text-indigo-500">To display the current date and time with Offset</h2>
+        <div class="text-black text-lg">
+            <p><span class="font-bold">Current time:</span> {{ now }}</p>
+            <p><span class="font-bold">Four Hours Ahead:</span> {{ four_hours_ahead }}</p>
+            <p><span class="font-bold">Four Hours Before:</span> {{ four_hours_before }}</p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
